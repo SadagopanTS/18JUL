@@ -2,26 +2,49 @@
 <html>
 	<head>
 		<title>CSS for custom tags </title>
-		<style type="text/css">
+		<!-- <style type="text/css">
 			h1,test {font-family: Calibri;
 				  font-weight: bold;
 				  color: blue;
 				 } 
+			p:first-letter {font-size:30px;
+							}
+			p > a {font-family:Arial;
+				color : Black;
+			  }
 			div {border: 1px solid red;
+				position: absolute;
+				top:500px;
+				left:300px;
+				width:250px;
+				}
+			#Apple {border: 1px solid red;
+				position: absolute;
+				top:200px;
+				left:300px;
+				width:250px;
+				background-color:grey;
+				}
+			#Orange {border: 1px solid blue;
 				position: absolute;
 				top:300px;
 				left:300px;
 				width:250px;
+				background-color:grey;
 				}
 			.redtext {color:red;}
 			.greentext{color:blue;}
-		</style>
+		</style> -->		
+		<link rel="stylesheet" type="text/css" href="s1.css" />
 	</head>
 	<body>
 		<h1>Styling Multiple Tags </h1>
 		<p>this is a sample paragraph contains <test> custom tag </test> will be formatted differently </p>
 		<div>This is a sample div this contain some text to see how styling work with div </div>
 		<p class="redtext">This paragraph is going to appear in red if stylesheet contains color attribute of this class set to red</p>
-		<p class="greentext">the class name needs to be set using a period in stylesheet</p>
+		<p class="greentext">the class name needs to be set using a period in stylesheet</p> 
+		<div id="Apple">This paragraph talks about apple. Apple is a very costly fruit, there is a phrase in english <em>"Takes an apple a day keeps the doctor away"</em>. In India Apple is cultivated in Kashmir. </div>
+		<div id="Orange">This paragraph talks about Banana. Banan is a fruit which is afordable by all, There are various types of banana, Rasthali, Poovan, Karpoora valli, Morris. It has many health benefits. Diabetics patient should consume carefully</div>
+		<p><a href="http://google.com">Google</a></p>
 	</body>
 </html>
