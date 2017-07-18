@@ -2,15 +2,44 @@
 <html>
 	<head>
 		<title>CSS for custom tags </title>
-		<link rel="stylesheet" type="text/css" href="s1.css" />
-		<style type="text/css">
+			<style type="text/css">
 			h1 {font-family: Courier;
 				}
+			#country {border: 2px solid red;
+					  position :absolute; 
+					  <!-- position accpets three values absolute,relative and fixed. Fixed will stay on screen even if you scroll down. Relative is xx pixel from the previous position -->
+					  top: 800px;
+					  left:500px;
+					  width:250px;
+					  left:100 px;
+					}
+			#temple {border: 2px solid blue;
+					  position :relative;
+					  left :500 px;
+					  top: 500px;
+					  width:250px;
+					  left:120 px;
+					}
+			img {max-width:50px;
+				max-head:50px;
+				}	
 		</style>
 	</head>
 	<body>
 		<h1>Styling Multiple Tags </h1>
 		<p>this is a sample paragraph reference to external css  will be formatted differently </p>
 		<p><a href="http://google.com">Google</a></p>
+		<div id="country">
+		<h1>Introduction</h1>
+		<p>India is my Country. Various religion, language people living together. But in the recent times pesudo secularism has grown up. This is because of the political parties divide the people by means of language and religion.
+		The worst part of it is, slowly it entered into colleges and premier institutions. This is not an encourging sign. Students of India should put a full stop to this and should concentrate on studies.</p>
+		</div>
+		<div id="temple">
+		<h1>About Srirangam</h1>
+		<p>Srirangam Lord Ranganatha Temple is one of the ancient Temple. The main deity is Lord Rengnatha. Goddess is Lord Rengnayaki Thayar. It is no. 1 in 108 divyadesam. All the alwars did mangalasasanam in this temple. 
+		Now-a-days lot of people coming to this temple, huge rush will be there througout the year. All the day is a festival day in Srirangam. One should be blessed to be in Srirangam.</p>
+		</div>
+		<img src="img/one.bmp">
+		<img src="img/logo.png">
 	</body>
 </html>
