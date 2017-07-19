@@ -15,10 +15,10 @@
 		</style>
 	</head>
 	<body>
-		<form>
+		<form action="home.html" method="post">
 			<div>
 			Username : <input type="text" name="unme" size="10" maxlength="10" value="Enter Username here "	 /> <br /><br/>
-			Password : <input type="text" name="unme" size="10" maxlength="10" value="Enter Password here "	 /> <br /> <br/>
+			Password : <input type="password" name="pwd" size="10" maxlength="10" value="Enter Password here "	 /> <br /> <br/>
 			Local <input type="radio" name="server" value="local">
 			Server <input type="radio" name="server" value="server"> <br /> <br />
 			Update Only <input type="checkbox" value="uonly">
@@ -36,7 +36,15 @@
 				<option value="c">C#</option>
 				<option value="api">APIS</option>
 			</select>			   
+			<br />
+			<input type="submit" value="Submit !">
 			</div>
+			Enter Your Address : <br />
+			<textarea name="adr" rows="5" cols="30">Enter your address here
+			</textarea>
+			<p> Upload your photos here !!  
+			<input type="file" name"pic">
+			</p>
 		</form>
 	</body>
 </html>
